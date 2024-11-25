@@ -90,3 +90,7 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+background {
+    background color: #gdddddd;
+}

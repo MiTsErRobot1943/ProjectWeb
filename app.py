@@ -9,19 +9,19 @@ def index():
     return render_template('index.html', user=user)
 
 # Define route for Genre
-@app.route('/genre')
+@app.route('/Genre.html')
 def genre():
     user = {'name': 'Blair'}
     return render_template('Genre.html', user=user)
 
 # Define route for Contact
-@app.route('/contact')
+@app.route('/Contact.html')
 def contact():
     user = {'name': 'Blair'}
     return render_template('Contact.html', user=user)
 
 # Define route for Login/Sign-in
-@app.route('/login')
+@app.route('/Login_Sign-in.html')
 def login():
     user = {'name': 'Blair'}
     return render_template('Login_Sign-in.html', user=user)

@@ -12,8 +12,8 @@
     <div>
         <div class="icon"></div>
         <button>
-            <a href="Login_Sign-in.html">
-                <img src="static/icons/user.png" alt="user icon" width="40px" height="40px">
+            <a href="{{ url_for('login') }}">
+                <img src="{{ url_for('static', filename='icons/user.png') }}" alt="user icon" width="40px" height="40px">
             </a>
         </button>
 
@@ -21,9 +21,9 @@
 </header>
 <nav class="navbar">
     <ul class="nav-list">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/Genre.html">Genre</a></li>
-        <li><a href="/Contact.html">Contact us</a></li>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('genre') }}">Genre</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact us</a></li>
     </ul>
 </nav>
 <section>

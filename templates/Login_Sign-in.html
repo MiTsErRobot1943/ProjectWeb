@@ -23,7 +23,7 @@
         <div class="icon"></div>
         <button>
             <a href="Login_Sign-in.html">
-                <img src="static/icons/user.png" alt="user icon" width="100px" height="100px">
+                <img src="static/icons/user.png" alt="user icon" width="40px" height="40px">
             </a>
         </button>
 
@@ -31,10 +31,9 @@
 </header>
 <nav class="navbar">
     <ul class="nav-list">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('genre') }}">Genre</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact us</a></li>
     </ul>
 </nav>
 </body>

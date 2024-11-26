@@ -91,6 +91,68 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-background {
-    background color: #gdddddd;
+.icon-container img {
+    display: block;
+    border-radius: 50%; /* Makes the corners fully rounded */
+    border: 2px solid #ccc; /* Optional: Add a border around the icon */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Optional, for better visualization */
+}
+
+header h1 {
+    margin: 0;
+}
+
+.icon-container {
+    margin-left: auto; /* Push the icon to the far right */
+}
+
+.icon-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-container img {
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Optional, for better visualization */
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap; /* Ensures the title stays on one line */
+}
+
+.icon-container {
+    margin-left: auto; /* Pushes the icon to the far right */
+}
+
+.icon-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-container img {
+    display: block;
 }

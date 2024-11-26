@@ -1,10 +1,10 @@
-from flask import Flask, render_template
-
+from flask import Flask, render_template, request, redirect, url_for
+from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 # Define the root route
 @app.route('/')
-def index():
+def home():
     user = {'name': 'Blair'}
     return render_template('index.html', user=user)
 

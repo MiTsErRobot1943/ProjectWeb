@@ -10,15 +10,16 @@
 <header>
     <h1>Text Quest</h1>
     <div>
+        <!-- Creates Icon button for login page -->
         <div class="icon"></div>
         <button>
              <a href="{{ url_for('login') }}">
                 <img src="static/icons/user.png" alt="user icon" width="40px" height="40px">
             </a>
         </button>
-
     </div>
 </header>
+<!-- Navbar -->
 <nav class="navbar">
     <ul class="nav-list">
         <li><a href="{{ url_for('home') }}">Home</a></li>
@@ -27,6 +28,7 @@
     </ul>
 </nav>
 <section>
+    <!-- Table of games -->
     <div class="table-container">
         <table>
             <tr>

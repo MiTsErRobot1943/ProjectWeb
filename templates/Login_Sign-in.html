@@ -2,41 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="StyleSheet.css">
-</head>
-<body>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>TextQuest</title>
+    <title>Login - TextQuest</title>
     <link rel="stylesheet" href="static/css/StyleSheet.css">
 </head>
-
 <body>
 <header>
     <h1>Text Quest</h1>
-    <div>
-        <div class="icon"></div>
-        <button>
-            <a href="Login_Sign-in.html">
-                <img src="static/icons/user.png" alt="user icon" width="100px" height="100px">
-            </a>
-        </button>
-
-    </div>
 </header>
 <nav class="navbar">
     <ul class="nav-list">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('genre') }}">Genre</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact us</a></li>
     </ul>
 </nav>
+<main>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="/sign-up">Sign up</a></p>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2024 TextQuest. All rights reserved.</p>
+</footer>
 </body>
-
 </html>

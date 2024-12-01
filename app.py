@@ -2,29 +2,21 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# Define the root route
 @app.route('/')
-def index():
-    user = {'name': 'Blair'}
-    return render_template('index.html', user=user)
+def home():
+    return render_template('index.html')
 
-# Define route for Genre
-@app.route('/Genre.html')
+@app.route('/genre')
 def genre():
-    user = {'name': 'Blair'}
-    return render_template('Genre.html', user=user)
+    return render_template('Genre.html')
 
-# Define route for Contact
-@app.route('/Contact.html')
+@app.route('/contact')
 def contact():
-    user = {'name': 'Blair'}
-    return render_template('Contact.html', user=user)
+    return render_template('Contact.html')
 
-# Define route for Login/Sign-in
-@app.route('/Login_Sign-in.html')
+@app.route('/Login_Sign-in')
 def login():
-    user = {'name': 'Blair'}
-    return render_template('Login_Sign-in.html', user=user)
+    return render_template('Login_Sign-in.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(debug=True)

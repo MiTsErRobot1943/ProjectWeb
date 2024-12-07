@@ -48,8 +48,8 @@ def login():
 
     return render_template('Login_Sign-in.html')
 
-@app.route('/sign-up', methods=['GET', 'POST'])
-def sign_up():
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
     if request.method == 'POST':
         username = request.form['username']
         email = request.form['email']
@@ -67,7 +67,7 @@ def sign_up():
         flash('Account created successfully!')
         return redirect(url_for('login'))
 
-    return render_template('sign_up.html')
+    return render_template('signup.html')
 # Ended setup of navigation
 
 #Runs the application

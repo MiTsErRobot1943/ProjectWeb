@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 from model import db, bcrypt, User
 
 app = Flask(__name__) # Don't remove or shit hits the fan - just reminder for me
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///TextQuestDBusers.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'your_secret_key'
 

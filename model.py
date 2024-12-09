@@ -13,3 +13,10 @@ class User(db.Model):
 
     def __repr__(self):
         return f'<User {self.username}>'
+
+    def __init__(self, username, first_name, last_name, password):
+        self.username = username
+        self.first_name = first_name
+        self.last_name = last_name
+        self.password = bcrypt.generate_password_hash(password).decode('utf-8')
+
